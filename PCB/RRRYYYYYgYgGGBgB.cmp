@@ -1,0 +1,255 @@
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Sun 08 Nov 2015 10:31:41 AM CST
+
+BeginCmp
+TimeStamp = /563C30E2;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = CR2032_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AC3DD;
+Reference = C1;
+ValeurCmp = 0.1;
+IdModule  = c_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AC2EE;
+Reference = C2;
+ValeurCmp = 0.1;
+IdModule  = c_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AC3EC;
+Reference = C3;
+ValeurCmp = 0.1;
+IdModule  = c_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C29C2;
+Reference = C4;
+ValeurCmp = 4.7 uF;
+IdModule  = c_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C327C;
+Reference = C5;
+ValeurCmp = 4.7 uF;
+IdModule  = c_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB44A;
+Reference = D1;
+ValeurCmp = 630nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB450;
+Reference = D2;
+ValeurCmp = 620nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB456;
+Reference = D3;
+ValeurCmp = 615nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB45C;
+Reference = D4;
+ValeurCmp = 605nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB462;
+Reference = D5;
+ValeurCmp = 596nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB8BE;
+Reference = D6;
+ValeurCmp = 590nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB002;
+Reference = D7;
+ValeurCmp = 585nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB754;
+Reference = D8;
+ValeurCmp = 580nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB75A;
+Reference = D9;
+ValeurCmp = 576nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB760;
+Reference = D10;
+ValeurCmp = 572nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB766;
+Reference = D11;
+ValeurCmp = 566nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB76C;
+Reference = D12;
+ValeurCmp = 560nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB772;
+Reference = D13;
+ValeurCmp = 527nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB8CD;
+Reference = D14;
+ValeurCmp = 470nm;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563DFE89;
+Reference = D15;
+ValeurCmp = pink;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563DFE98;
+Reference = D16;
+ValeurCmp = white;
+IdModule  = LED-0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C2173;
+Reference = K1;
+ValeurCmp = CONN_6;
+IdModule  = tag-connect-TC2030-IDC-NL;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C2985;
+Reference = L1;
+ValeurCmp = 4.7 uH;
+IdModule  = VLF3012A;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C29A9;
+Reference = R1;
+ValeurCmp = 1M;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AD150;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AD15F;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C3C46;
+Reference = RN1;
+ValeurCmp = EXB-D10C680J;
+IdModule  = RN-EXBD;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C456B;
+Reference = RN2;
+ValeurCmp = EXB-D10C680J;
+IdModule  = RN-EXBD;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C4D66;
+Reference = SW1;
+ValeurCmp = SPST;
+IdModule  = JS102011SAQN;
+EndCmp
+
+BeginCmp
+TimeStamp = /563ACE05;
+Reference = SW2;
+ValeurCmp = SW_PUSH;
+IdModule  = TL3330AF130QG;
+EndCmp
+
+BeginCmp
+TimeStamp = /563ACE14;
+Reference = SW3;
+ValeurCmp = SW_PUSH;
+IdModule  = TL3330AF130QG;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AC0C3;
+Reference = U1;
+ValeurCmp = ATTINY85-M;
+IdModule  = QFN20;
+EndCmp
+
+BeginCmp
+TimeStamp = /563C296D;
+Reference = U2;
+ValeurCmp = AAT1217-3.3;
+IdModule  = tsot-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB488;
+Reference = U3;
+ValeurCmp = 74HC595;
+IdModule  = DHVQFN16;
+EndCmp
+
+BeginCmp
+TimeStamp = /563AB792;
+Reference = U4;
+ValeurCmp = 74HC595;
+IdModule  = DHVQFN16;
+EndCmp
+
+EndListe
