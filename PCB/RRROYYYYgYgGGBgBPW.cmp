@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Sun 08 Nov 2015 10:31:41 AM CST
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Tue 10 Nov 2015 02:25:55 PM CST
 
 BeginCmp
 TimeStamp = /563C30E2;
@@ -225,10 +225,10 @@ IdModule  = TL3330AF130QG;
 EndCmp
 
 BeginCmp
-TimeStamp = /563AC0C3;
+TimeStamp = /564253CE;
 Reference = U1;
-ValeurCmp = ATTINY85-M;
-IdModule  = QFN20;
+ValeurCmp = ATTINY85-S;
+IdModule  = tssop-8;
 EndCmp
 
 BeginCmp

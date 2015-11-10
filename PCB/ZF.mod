@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Sun 08 Nov 2015 11:26:49 AM CST
+PCBNEW-LibModule-V1  Tue 10 Nov 2015 02:21:57 PM CST
 # encoding utf-8
 Units mm
 $INDEX
@@ -11,6 +11,7 @@ RN-EXBD
 TL3330AF130QG
 VLF3012A
 tag-connect-TC2030-IDC-NL
+tssop-8
 $EndINDEX
 $MODULE CR2032_smd
 Po 0 0 0 15 563F80C4 00000000 ~~
@@ -272,7 +273,7 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE LED-0402
 $MODULE QFN20
-Po 0 0 0 15 563D42A9 00000000 ~~
+Po 0 0 0 15 56424D1F 00000000 ~~
 Li QFN20
 Sc 0
 AR 
@@ -286,149 +287,149 @@ DS -2 -1 -2 -1.5 0.15 21
 DS -2 -1.5 -1.5 -2 0.15 21
 DS -1.5 -2 2 -2 0.15 21
 $PAD
-Sh "3" R 0.25 0.7 0 0 0
+Sh "18" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 0 -1.9
 $EndPAD
 $PAD
-Sh "4" R 0.25 0.7 0 0 0
+Sh "17" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 0.5 -1.9
 $EndPAD
 $PAD
-Sh "5" R 0.25 0.7 0 0 0
+Sh "16" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 1 -1.9
 $EndPAD
 $PAD
-Sh "7" R 0.25 0.7 0 0 0
+Sh "19" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -0.5 -1.9
 $EndPAD
 $PAD
-Sh "8" R 0.25 0.7 0 0 0
+Sh "20" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -1 -1.9
 $EndPAD
 $PAD
-Sh "9" R 0.25 0.7 0 0 0
+Sh "8" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 0 1.9
 $EndPAD
 $PAD
-Sh "10" R 0.25 0.7 0 0 0
+Sh "9" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 0.5 1.9
 $EndPAD
 $PAD
-Sh "11" R 0.25 0.7 0 0 0
+Sh "10" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 1 1.9
 $EndPAD
 $PAD
-Sh "12" R 0.25 0.7 0 0 0
+Sh "7" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -0.5 1.9
 $EndPAD
 $PAD
-Sh "13" R 0.25 0.7 0 0 0
+Sh "6" R 0.25 0.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -1 1.9
 $EndPAD
 $PAD
-Sh "14" R 0.7 0.25 0 0 0
+Sh "3" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -1.9 0
 $EndPAD
 $PAD
-Sh "15" R 0.7 0.25 0 0 0
+Sh "2" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -1.9 -0.5
 $EndPAD
 $PAD
-Sh "16" R 0.7 0.25 0 0 0
+Sh "1" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -1.9 -1
 $EndPAD
 $PAD
-Sh "17" R 0.7 0.25 0 0 0
+Sh "4" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -1.9 0.5
 $EndPAD
 $PAD
-Sh "18" R 0.7 0.25 0 0 0
+Sh "5" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po -1.9 1
 $EndPAD
 $PAD
-Sh "19" R 0.7 0.25 0 0 0
+Sh "13" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 1.9 0
 $EndPAD
 $PAD
-Sh "20" R 0.7 0.25 0 0 0
+Sh "14" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 1.9 -0.5
 $EndPAD
 $PAD
-Sh "21" R 0.7 0.25 0 0 0
+Sh "15" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 1.9 -1
 $EndPAD
 $PAD
-Sh "22" R 0.7 0.25 0 0 0
+Sh "12" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 1.9 0.5
 $EndPAD
 $PAD
-Sh "23" R 0.7 0.25 0 0 0
+Sh "11" R 0.7 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
 Po 1.9 1
 $EndPAD
 $PAD
-Sh "24" R 2.5 2.5 0 0 0
+Sh "21" R 2.5 2.5 0 0 0
 Dr 0 0 0
-At SMD N 00808000
+At SMD N 00888000
 Ne 0 ""
 Po 0 0
 $EndPAD
@@ -656,4 +657,81 @@ Ne 0 ""
 Po 1.27 -0.635
 $EndPAD
 $EndMODULE tag-connect-TC2030-IDC-NL
+$MODULE tssop-8
+Po 0 0 0 15 564251A4 00000000 ~~
+Li tssop-8
+Cd TSSOP-16
+Sc 0
+AR 
+Op 0 0 0
+T0 -1.3 0.8 0.50038 0.50038 0 0.09906 N V 21 N "TSSOP-8"
+T1 -1.3 -0.5 0.50038 0.50038 0 0.09906 N V 21 N "U***"
+DS 0 -2.3 -2.6 -2.3 0.15 21
+DS -2.6 -2.3 -2.6 2.3 0.15 21
+DS -2.6 2.3 0 2.3 0.15 21
+DS 0 -2.3 0 2.3 0.15 21
+DC -1.905 1.524 -2.032 1.778 0.127 21
+$PAD
+Sh "4" R 0.4191 1.47066 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.32512 2.79908
+$EndPAD
+$PAD
+Sh "8" R 0.4191 1.47066 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.26568 -2.794
+$EndPAD
+$PAD
+Sh "1" R 0.4191 1.47066 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.27584 2.79908
+$EndPAD
+$PAD
+Sh "2" R 0.4191 1.47066 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.6256 2.79908
+$EndPAD
+$PAD
+Sh "3" R 0.4191 1.47066 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.97536 2.79908
+$EndPAD
+$PAD
+Sh "5" R 0.4191 1.47066 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.32512 -2.79908
+$EndPAD
+$PAD
+Sh "6" R 0.4191 1.47066 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.97536 -2.79908
+$EndPAD
+$PAD
+Sh "7" R 0.4191 1.47066 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.6256 -2.794
+$EndPAD
+$SHAPE3D
+Na "smd/smd_dil/tssop-16.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE tssop-8
 $EndLIBRARY
