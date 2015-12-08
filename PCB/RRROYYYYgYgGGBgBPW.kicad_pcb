@@ -3,7 +3,7 @@
   (general
     (links 76)
     (no_connects 0)
-    (area 165.274999 25.157555 189.101119 48.991119)
+    (area 164.899999 17.150001 202.999999 50.568199)
     (thickness 1.6)
     (drawings 45)
     (tracks 471)
@@ -731,11 +731,11 @@
     )
   )
 
-  (module c_0402 (layer F.Cu) (tedit 49047259) (tstamp 56663E75)
+  (module c_0402 (layer F.Cu) (tedit 5666DF04) (tstamp 56663E75)
     (at 172.8 42.55 180)
     (descr "SMT capacitor, 0402")
     (path /563AC2EE)
-    (fp_text reference C2 (at 0 -0.4826 180) (layer F.SilkS)
+    (fp_text reference C2 (at 0 -0.4826 180) (layer F.SilkS) hide
       (effects (font (size 0.1524 0.1524) (thickness 0.03048)))
     )
     (fp_text value 0.1 (at 0 0.4826 180) (layer F.SilkS) hide
@@ -762,11 +762,11 @@
     )
   )
 
-  (module c_0402 (layer F.Cu) (tedit 49047259) (tstamp 56663E81)
+  (module c_0402 (layer F.Cu) (tedit 5666DF0A) (tstamp 56663E81)
     (at 182.85 32.45 90)
     (descr "SMT capacitor, 0402")
     (path /563AC3DD)
-    (fp_text reference C1 (at 0 -0.4826 90) (layer F.SilkS)
+    (fp_text reference C1 (at 0 -0.4826 90) (layer F.SilkS) hide
       (effects (font (size 0.1524 0.1524) (thickness 0.03048)))
     )
     (fp_text value 0.1 (at 0 0.4826 90) (layer F.SilkS) hide
@@ -1333,11 +1333,11 @@
     )
   )
 
-  (module SM0402 (layer B.Cu) (tedit 50A4E0BA) (tstamp 5666DB78)
+  (module SM0402 (layer B.Cu) (tedit 5666DF15) (tstamp 5666DB78)
     (at 182 27.7 270)
     (path /5666E49D)
     (attr smd)
-    (fp_text reference R6 (at 0 0 270) (layer B.SilkS)
+    (fp_text reference R6 (at 0 0 270) (layer B.SilkS) hide
       (effects (font (size 0.35052 0.3048) (thickness 0.07112)) (justify mirror))
     )
     (fp_text value R (at 0.09906 0 270) (layer B.SilkS) hide
@@ -1364,11 +1364,11 @@
     )
   )
 
-  (module SM0402 (layer B.Cu) (tedit 50A4E0BA) (tstamp 5666DB84)
+  (module SM0402 (layer B.Cu) (tedit 5666DF18) (tstamp 5666DB84)
     (at 180.55 27.95 270)
     (path /5666E57C)
     (attr smd)
-    (fp_text reference R4 (at 0 0 270) (layer B.SilkS)
+    (fp_text reference R4 (at 0 0 270) (layer B.SilkS) hide
       (effects (font (size 0.35052 0.3048) (thickness 0.07112)) (justify mirror))
     )
     (fp_text value R (at 0.09906 0 270) (layer B.SilkS) hide
@@ -1395,11 +1395,11 @@
     )
   )
 
-  (module SM0402 (layer B.Cu) (tedit 50A4E0BA) (tstamp 5666DB90)
+  (module SM0402 (layer B.Cu) (tedit 5666DF1C) (tstamp 5666DB90)
     (at 179.05 28.3 270)
     (path /5666E722)
     (attr smd)
-    (fp_text reference R5 (at 0 0 270) (layer B.SilkS)
+    (fp_text reference R5 (at 0 0 270) (layer B.SilkS) hide
       (effects (font (size 0.35052 0.3048) (thickness 0.07112)) (justify mirror))
     )
     (fp_text value R (at 0.09906 0 270) (layer B.SilkS) hide
@@ -1426,11 +1426,11 @@
     )
   )
 
-  (module SM0402 (layer B.Cu) (tedit 50A4E0BA) (tstamp 5666DC41)
+  (module SM0402 (layer B.Cu) (tedit 5666DF21) (tstamp 5666DC41)
     (at 177.6 28.8 270)
     (path /5666E801)
     (attr smd)
-    (fp_text reference R1 (at 0 0 270) (layer B.SilkS)
+    (fp_text reference R1 (at 0 0 270) (layer B.SilkS) hide
       (effects (font (size 0.35052 0.3048) (thickness 0.07112)) (justify mirror))
     )
     (fp_text value R (at 0.09906 0 270) (layer B.SilkS) hide
@@ -1638,14 +1638,14 @@
   (segment (start 177.390857 42.240604) (end 178.086649 42.936396) (width 0.25) (layer F.Cu) (net 1) (tstamp 5666480D))
   (segment (start 179.75 31.1) (end 179.75 28.908268) (width 0.15) (layer F.Cu) (net 2))
   (segment (start 179.75 28.908268) (end 179.314979 28.473247) (width 0.15) (layer F.Cu) (net 2) (tstamp 566648BA))
-  (segment (start 180.55 27.50042) (end 180.55 26.55) (width 0.15) (layer B.Cu) (net 3) (status 400000))
+  (segment (start 180.55 27.50042) (end 180.55 26.55) (width 0.15) (layer B.Cu) (net 3))
   (segment (start 180.55 26.55) (end 180.3 26.3) (width 0.15) (layer B.Cu) (net 3) (tstamp 5666DD4F))
-  (segment (start 180.481253 27.064365) (end 180.481253 26.481253) (width 0.15) (layer F.Cu) (net 3) (status 400000))
+  (segment (start 180.481253 27.064365) (end 180.481253 26.481253) (width 0.15) (layer F.Cu) (net 3))
   (via (at 180.3 26.3) (size 0.75) (layers F.Cu B.Cu) (net 3))
   (segment (start 180.481253 26.481253) (end 180.3 26.3) (width 0.15) (layer F.Cu) (net 3) (tstamp 5666DD4C))
-  (segment (start 181.978388 26.806054) (end 181.978388 26.128388) (width 0.15) (layer F.Cu) (net 4) (status 400000))
+  (segment (start 181.978388 26.806054) (end 181.978388 26.128388) (width 0.15) (layer F.Cu) (net 4))
   (segment (start 181.978388 26.128388) (end 181.9 26.05) (width 0.15) (layer F.Cu) (net 4) (tstamp 5666DD55))
-  (segment (start 182 27.25042) (end 182 26.15) (width 0.15) (layer B.Cu) (net 4) (status 400000))
+  (segment (start 182 27.25042) (end 182 26.15) (width 0.15) (layer B.Cu) (net 4))
   (segment (start 182 26.15) (end 181.9 26.05) (width 0.15) (layer B.Cu) (net 4) (tstamp 5666DD52))
   (segment (start 181.9 26.05) (end 181.978388 26.128388) (width 0.15) (layer F.Cu) (net 4) (tstamp 5666DD07))
   (via (at 181.9 26.05) (size 0.75) (layers F.Cu B.Cu) (net 4))
@@ -1779,8 +1779,8 @@
   (segment (start 180.25 31.1) (end 180.25 30.5) (width 0.15) (layer F.Cu) (net 12))
   (segment (start 180.718747 30.031253) (end 180.718747 28.135635) (width 0.15) (layer F.Cu) (net 12) (tstamp 566648B7))
   (segment (start 180.25 30.5) (end 180.718747 30.031253) (width 0.15) (layer F.Cu) (net 12) (tstamp 566648B5))
-  (segment (start 182 28.14958) (end 182 28.547039) (width 0.15) (layer B.Cu) (net 13) (status 400000))
-  (segment (start 182 28.547039) (end 178.645271 31.901768) (width 0.15) (layer B.Cu) (net 13) (tstamp 5666DD5B) (status 800000))
+  (segment (start 182 28.14958) (end 182 28.547039) (width 0.15) (layer B.Cu) (net 13))
+  (segment (start 182 28.547039) (end 178.645271 31.901768) (width 0.15) (layer B.Cu) (net 13) (tstamp 5666DD5B))
   (segment (start 171.752755 37.896258) (end 171.752755 37.897245) (width 0.15) (layer B.Cu) (net 14))
   (segment (start 166.606253 40.331253) (end 166.425 40.15) (width 0.2) (layer F.Cu) (net 14) (tstamp 56662EE0))
   (via (at 166.425 40.15) (size 0.75) (layers F.Cu B.Cu) (net 14))
@@ -1946,18 +1946,18 @@
   (segment (start 170.725 37.125) (end 167.4 37.125) (width 0.15) (layer B.Cu) (net 39) (tstamp 56664A38))
   (segment (start 170.851768 36.998232) (end 170.725 37.125) (width 0.15) (layer B.Cu) (net 39) (tstamp 56664A37))
   (segment (start 177.25 27.25) (end 177.25 28.00042) (width 0.15) (layer B.Cu) (net 40))
-  (segment (start 177.25 28.00042) (end 177.6 28.35042) (width 0.15) (layer B.Cu) (net 40) (tstamp 5666DD28) (status 800000))
-  (segment (start 177.540045 27.943123) (end 177.540045 27.540045) (width 0.15) (layer F.Cu) (net 40) (status C00000))
-  (segment (start 177.540045 27.540045) (end 177.25 27.25) (width 0.15) (layer F.Cu) (net 40) (tstamp 5666DD25) (status 400000))
+  (segment (start 177.25 28.00042) (end 177.6 28.35042) (width 0.15) (layer B.Cu) (net 40) (tstamp 5666DD28))
+  (segment (start 177.540045 27.943123) (end 177.540045 27.540045) (width 0.15) (layer F.Cu) (net 40))
+  (segment (start 177.540045 27.540045) (end 177.25 27.25) (width 0.15) (layer F.Cu) (net 40) (tstamp 5666DD25))
   (via (at 177.25 27.25) (size 0.75) (layers F.Cu B.Cu) (net 40))
   (segment (start 177.6 29.24958) (end 177.6 30.252961) (width 0.15) (layer B.Cu) (net 41))
   (segment (start 177.6 30.252961) (end 177.298232 30.554729) (width 0.15) (layer B.Cu) (net 41) (tstamp 5666DC7B))
   (segment (start 179.05 28.74958) (end 179.05 29.700987) (width 0.15) (layer B.Cu) (net 42))
   (segment (start 179.05 29.700987) (end 177.747245 31.003742) (width 0.15) (layer B.Cu) (net 42) (tstamp 5666DC97))
-  (segment (start 178.985021 27.426753) (end 178.985021 26.885021) (width 0.15) (layer F.Cu) (net 43) (status 400000))
+  (segment (start 178.985021 27.426753) (end 178.985021 26.885021) (width 0.15) (layer F.Cu) (net 43))
   (segment (start 178.985021 26.885021) (end 178.8 26.7) (width 0.15) (layer F.Cu) (net 43) (tstamp 5666DD36))
   (segment (start 178.8 26.7) (end 178.8 27.60042) (width 0.15) (layer B.Cu) (net 43))
-  (segment (start 178.8 27.60042) (end 179.05 27.85042) (width 0.15) (layer B.Cu) (net 43) (tstamp 5666DD32) (status 800000))
+  (segment (start 178.8 27.60042) (end 179.05 27.85042) (width 0.15) (layer B.Cu) (net 43) (tstamp 5666DD32))
   (segment (start 178.8 26.7) (end 178.985021 26.885021) (width 0.15) (layer F.Cu) (net 43) (tstamp 5666DC93))
   (via (at 178.8 26.7) (size 0.75) (layers F.Cu B.Cu) (net 43))
   (segment (start 180.55 28.39958) (end 180.55 29.099013) (width 0.15) (layer B.Cu) (net 44))
