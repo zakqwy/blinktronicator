@@ -1,11 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Tue 10 Nov 2015 02:25:55 PM CST
-
-BeginCmp
-TimeStamp = /563C30E2;
-Reference = BT1;
-ValeurCmp = BATTERY;
-IdModule  = CR2032_smd;
-EndCmp
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Mon 07 Dec 2015 06:47:35 PM CST
 
 BeginCmp
 TimeStamp = /563AC3DD;
@@ -29,17 +22,10 @@ IdModule  = c_0402;
 EndCmp
 
 BeginCmp
-TimeStamp = /563C29C2;
-Reference = C4;
-ValeurCmp = 4.7 uF;
-IdModule  = c_0402;
-EndCmp
-
-BeginCmp
-TimeStamp = /563C327C;
-Reference = C5;
-ValeurCmp = 4.7 uF;
-IdModule  = c_0402;
+TimeStamp = /56662234;
+Reference = CONN1;
+ValeurCmp = USB_PLUG;
+IdModule  = USBplug;
 EndCmp
 
 BeginCmp
@@ -155,24 +141,45 @@ IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
-TimeStamp = /563C2173;
-Reference = K1;
-ValeurCmp = CONN_6;
-IdModule  = tag-connect-TC2030-IDC-NL;
+TimeStamp = /56662E4A;
+Reference = P1;
+ValeurCmp = VCC;
+IdModule  = PAD_1-5mm;
 EndCmp
 
 BeginCmp
-TimeStamp = /563C2985;
-Reference = L1;
-ValeurCmp = 4.7 uH;
-IdModule  = VLF3012A;
+TimeStamp = /56662D5B;
+Reference = P2;
+ValeurCmp = GND;
+IdModule  = PAD_1-5mm;
 EndCmp
 
 BeginCmp
-TimeStamp = /563C29A9;
-Reference = R1;
-ValeurCmp = 1M;
-IdModule  = SM0402;
+TimeStamp = /56662860;
+Reference = P3;
+ValeurCmp = RST;
+IdModule  = PAD_1-5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /566629F9;
+Reference = P4;
+ValeurCmp = SCK;
+IdModule  = PAD_1-5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /56662B89;
+Reference = P5;
+ValeurCmp = MISO;
+IdModule  = PAD_1-5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /56662C59;
+Reference = P6;
+ValeurCmp = MOSI;
+IdModule  = PAD_1-5mm;
 EndCmp
 
 BeginCmp
@@ -204,13 +211,6 @@ IdModule  = RN-EXBD;
 EndCmp
 
 BeginCmp
-TimeStamp = /563C4D66;
-Reference = SW1;
-ValeurCmp = SPST;
-IdModule  = JS102011SAQN;
-EndCmp
-
-BeginCmp
 TimeStamp = /563ACE05;
 Reference = SW2;
 ValeurCmp = SW_PUSH;
@@ -229,13 +229,6 @@ TimeStamp = /564253CE;
 Reference = U1;
 ValeurCmp = ATTINY85-S;
 IdModule  = tssop-8;
-EndCmp
-
-BeginCmp
-TimeStamp = /563C296D;
-Reference = U2;
-ValeurCmp = AAT1217-3.3;
-IdModule  = tsot-6;
 EndCmp
 
 BeginCmp
