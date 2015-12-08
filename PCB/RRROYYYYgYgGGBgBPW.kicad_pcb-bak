@@ -1,14 +1,14 @@
 (kicad_pcb (version 3) (host pcbnew "(2013-jul-07)-stable")
 
   (general
-    (links 70)
+    (links 72)
     (no_connects 0)
-    (area 164.899999 17.150001 202.999999 50.568199)
+    (area 165.274999 25.157555 189.101119 48.991119)
     (thickness 1.6)
     (drawings 45)
     (tracks 464)
     (zones 0)
-    (modules 33)
+    (modules 35)
     (nets 42)
   )
 
@@ -1292,6 +1292,36 @@
     (pad 1 connect circle (at 0 0) (size 1.5 1.5)
       (layers B.Cu B.Mask)
       (net 1 GND)
+    )
+  )
+
+  (module PAD_1-5mm (layer B.Cu) (tedit 566664E9) (tstamp 56666F02)
+    (at 184.5 35.05)
+    (path /566629F9)
+    (fp_text reference P4 (at 0 0) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value SCK (at 0 -1.8) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad 1 connect circle (at 0 0) (size 1.5 1.5)
+      (layers B.Cu B.Mask)
+      (net 5 N-0000014)
+    )
+  )
+
+  (module PAD_1-5mm (layer B.Cu) (tedit 566664E9) (tstamp 56666F07)
+    (at 174.65 43.95)
+    (path /56662E4A)
+    (fp_text reference P1 (at 0 0) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value VCC (at 0 -1.8) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad 1 connect circle (at 0 0) (size 1.5 1.5)
+      (layers B.Cu B.Mask)
+      (net 41 VCC)
     )
   )
 

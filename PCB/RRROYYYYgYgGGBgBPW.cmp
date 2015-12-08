@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Mon 07 Dec 2015 06:47:35 PM CST
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Tue 08 Dec 2015 07:30:01 AM CST
 
 BeginCmp
 TimeStamp = /563AC3DD;
@@ -183,6 +183,13 @@ IdModule  = PAD_1-5mm;
 EndCmp
 
 BeginCmp
+TimeStamp = /5666E801;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
 TimeStamp = /563AD150;
 Reference = R2;
 ValeurCmp = 10k;
@@ -193,6 +200,27 @@ BeginCmp
 TimeStamp = /563AD15F;
 Reference = R3;
 ValeurCmp = 10k;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /5666E57C;
+Reference = R4;
+ValeurCmp = R;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /5666E722;
+Reference = R5;
+ValeurCmp = R;
+IdModule  = SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /5666E49D;
+Reference = R6;
+ValeurCmp = R;
 IdModule  = SM0402;
 EndCmp
 
