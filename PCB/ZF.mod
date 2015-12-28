@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Mon 07 Dec 2015 11:04:43 PM CST
+PCBNEW-LibModule-V1  Fri 25 Dec 2015 05:25:41 PM EST
 # encoding utf-8
 Units mm
 $INDEX
@@ -241,125 +241,128 @@ Po -2.8 2.4
 $EndPAD
 $EndMODULE Connector_JST_SH_side_entry
 $MODULE DHVQFN16
-Po 0 0 0 15 5666647C 00000000 ~~
+Po 0 0 0 15 567DC262 00000000 ~~
 Li DHVQFN16
 Sc 0
 AR 
 Op 0 0 0
 T0 0 -3.2 1 1 0 0.15 N I 21 N "DHVQFN16"
 T1 0 3 1 1 0 0.15 N I 21 N "VAL**"
-DS -1.8 -0.4 -1 -1.2 0.15 21
+DS -1.8 1.2 -1 0.4 0.15 21
+DS -1 0.4 -1.2 0.4 0.15 21
+DS -1.2 0.4 -1 0.6 0.15 21
+DS -1 0.6 -1 0.4 0.15 21
 DS -1.8 -1.2 -1.8 1.2 0.15 21
 DS -1.8 1.2 1.8 1.2 0.15 21
 DS 1.8 1.2 1.8 -1.2 0.15 21
 DS 1.8 -1.2 -1.8 -1.2 0.15 21
 $PAD
-Sh "5" R 0.25 0.8 0 0 0
+Sh "12" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 0.25 -1.4
 $EndPAD
 $PAD
-Sh "4" R 0.25 0.8 0 0 0
+Sh "13" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -0.25 -1.4
 $EndPAD
 $PAD
-Sh "3" R 0.25 0.8 0 0 0
+Sh "14" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -0.75 -1.4
 $EndPAD
 $PAD
-Sh "2" R 0.25 0.8 0 0 0
+Sh "15" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -1.25 -1.4
 $EndPAD
 $PAD
-Sh "6" R 0.25 0.8 0 0 0
+Sh "11" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 0.75 -1.4
 $EndPAD
 $PAD
-Sh "7" R 0.25 0.8 0 0 0
+Sh "10" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 1.25 -1.4
 $EndPAD
 $PAD
-Sh "13" R 0.25 0.8 0 0 0
+Sh "4" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -0.25 1.4
 $EndPAD
 $PAD
-Sh "14" R 0.25 0.8 0 0 0
+Sh "3" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -0.75 1.4
 $EndPAD
 $PAD
-Sh "15" R 0.25 0.8 0 0 0
+Sh "2" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -1.25 1.4
 $EndPAD
 $PAD
-Sh "12" R 0.25 0.8 0 0 0
+Sh "5" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 0.25 1.4
 $EndPAD
 $PAD
-Sh "11" R 0.25 0.8 0 0 0
+Sh "6" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 0.75 1.4
 $EndPAD
 $PAD
-Sh "10" R 0.25 0.8 0 0 0
+Sh "7" R 0.25 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 1.25 1.4
 $EndPAD
 $PAD
-Sh "1" R 0.8 0.25 0 0 0
+Sh "16" R 0.8 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -2 -0.25
 $EndPAD
 $PAD
-Sh "16" R 0.8 0.25 0 0 0
+Sh "1" R 0.8 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -2 0.25
 $EndPAD
 $PAD
-Sh "8" R 0.8 0.25 0 0 0
+Sh "9" R 0.8 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 2 -0.25
 $EndPAD
 $PAD
-Sh "9" R 0.8 0.25 0 0 0
+Sh "8" R 0.8 0.25 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
@@ -981,7 +984,7 @@ Po -3.4 1
 $EndPAD
 $EndMODULE TL3330AF130QG
 $MODULE USBplug
-Po 0 0 0 15 5666643C 00000000 ~~
+Po 0 0 0 15 567DC062 00000000 ~~
 Li USBplug
 Sc 0
 AR 
@@ -990,15 +993,15 @@ T0 0 -5.4 1 1 0 0.15 N I 21 N "USBplug"
 T1 0.3 0.1 1 1 0 0.15 N I 21 N "VAL**"
 DS 6 2.7 -6 2.7 0.15 21
 $PAD
-Sh "" O 3 4 0 0 0
-Dr 2.5 0 0
+Sh "" O 2 4 0 0 0
+Dr 1 0 0 O 1 2.5
 At STD N 00E0FFFF
 Ne 0 ""
 Po -5.85 0
 $EndPAD
 $PAD
-Sh "" O 3 4 0 0 0
-Dr 2.5 0 0
+Sh "" O 2 4 0 0 0
+Dr 1 0 0 O 1 2.5
 At STD N 00E0FFFF
 Ne 0 ""
 Po 5.85 0
@@ -1009,20 +1012,6 @@ Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 3.5 -2.6
-$EndPAD
-$PAD
-Sh "2" R 1.2 2 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 1 -2.6
-$EndPAD
-$PAD
-Sh "3" R 1.2 2 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -1 -2.6
 $EndPAD
 $PAD
 Sh "4" R 1.2 2 0 0 0
