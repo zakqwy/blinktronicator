@@ -94,7 +94,7 @@ int main(void) {
 	int fastLoopOverflow = 10;
 
 	long slowLoop = 0;
-	long slowLoopOverflow = 50000; //5000: speedy but visible
+	long slowLoopOverflow = 5000; //5000: speedy but visible
 
 
 	for(;;) {
