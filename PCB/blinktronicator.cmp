@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Tue 08 Dec 2015 07:30:01 AM CST
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Sun 27 Dec 2015 11:58:11 PM CST
 
 BeginCmp
 TimeStamp = /563AC3DD;
@@ -31,127 +31,113 @@ EndCmp
 BeginCmp
 TimeStamp = /563AB44A;
 Reference = D1;
-ValeurCmp = 630nm;
+ValeurCmp = WHT;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB450;
 Reference = D2;
-ValeurCmp = 620nm;
+ValeurCmp = PNK;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB456;
 Reference = D3;
-ValeurCmp = 615nm;
+ValeurCmp = 470nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB45C;
 Reference = D4;
-ValeurCmp = 605nm;
+ValeurCmp = 527nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB462;
 Reference = D5;
-ValeurCmp = 596nm;
+ValeurCmp = 560nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB8BE;
 Reference = D6;
-ValeurCmp = 590nm;
+ValeurCmp = 566nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB002;
 Reference = D7;
-ValeurCmp = 585nm;
+ValeurCmp = 572nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB754;
 Reference = D8;
-ValeurCmp = 580nm;
+ValeurCmp = 576nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB75A;
 Reference = D9;
-ValeurCmp = 576nm;
+ValeurCmp = 580nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB760;
 Reference = D10;
-ValeurCmp = 572nm;
+ValeurCmp = 585nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB766;
 Reference = D11;
-ValeurCmp = 566nm;
+ValeurCmp = 590nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB76C;
 Reference = D12;
-ValeurCmp = 560nm;
+ValeurCmp = 596nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB772;
 Reference = D13;
-ValeurCmp = 527nm;
+ValeurCmp = 605nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563AB8CD;
 Reference = D14;
-ValeurCmp = 470nm;
+ValeurCmp = 615nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563DFE89;
 Reference = D15;
-ValeurCmp = pink;
+ValeurCmp = 620nm;
 IdModule  = LED-0402;
 EndCmp
 
 BeginCmp
 TimeStamp = /563DFE98;
 Reference = D16;
-ValeurCmp = white;
+ValeurCmp = 630nm;
 IdModule  = LED-0402;
-EndCmp
-
-BeginCmp
-TimeStamp = /56662E4A;
-Reference = P1;
-ValeurCmp = VCC;
-IdModule  = PAD_1-5mm;
-EndCmp
-
-BeginCmp
-TimeStamp = /56662D5B;
-Reference = P2;
-ValeurCmp = GND;
-IdModule  = PAD_1-5mm;
 EndCmp
 
 BeginCmp

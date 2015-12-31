@@ -32,7 +32,7 @@
   )
 
   (setup
-    (last_trace_width 0.15)
+    (last_trace_width 0.25)
     (user_trace_width 0.25)
     (trace_clearance 0.225)
     (zone_clearance 0.508)
@@ -54,8 +54,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.1 1.1)
-    (pad_drill 1.1)
+    (pad_size 2.4 3.6)
+    (pad_drill 1.2)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF3F)
@@ -1401,7 +1401,7 @@
     )
   )
 
-  (module USBplug (layer F.Cu) (tedit 56848477) (tstamp 56663120)
+  (module USBplug (layer F.Cu) (tedit 56847FE0) (tstamp 56663120)
     (at 182.4 42.3 45)
     (path /56662234)
     (fp_text reference CONN1 (at 0 -5.4 45) (layer F.SilkS) hide
@@ -1426,10 +1426,10 @@
       (net 17 GND)
     )
     (pad "" np_thru_hole circle (at 2.25 0 45) (size 1.1 1.1) (drill 1.1)
-      (layers *.Cu)
+      (layers *.Cu *.Mask F.SilkS)
     )
     (pad "" np_thru_hole circle (at -2.25 0 45) (size 1.1 1.1) (drill 1.1)
-      (layers *.Cu)
+      (layers *.Cu *.Mask F.SilkS)
     )
   )
 

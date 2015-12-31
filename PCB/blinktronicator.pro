@@ -1,4 +1,4 @@
-update=Mon 07 Dec 2015 06:42:37 PM CST
+update=Sun 27 Dec 2015 11:58:57 PM CST
 version=1
 last_client=eeschema
 [cvpcb]
@@ -87,3 +87,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=usb_plug
 LibName32=/home/zach/Documents/NeuroTinker/NeuroBytes-v05/Hardware-rev5/ZF
+LibName33=ZF

@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Fri 25 Dec 2015 05:25:41 PM EST
+PCBNEW-LibModule-V1  Wed 30 Dec 2015 07:30:45 PM CST
 # encoding utf-8
 Units mm
 $INDEX
@@ -984,7 +984,7 @@ Po -3.4 1
 $EndPAD
 $EndMODULE TL3330AF130QG
 $MODULE USBplug
-Po 0 0 0 15 567DC062 00000000 ~~
+Po 0 0 0 15 56848542 00000000 ~~
 Li USBplug
 Sc 0
 AR 
@@ -993,15 +993,15 @@ T0 0 -5.4 1 1 0 0.15 N I 21 N "USBplug"
 T1 0.3 0.1 1 1 0 0.15 N I 21 N "VAL**"
 DS 6 2.7 -6 2.7 0.15 21
 $PAD
-Sh "" O 2 4 0 0 0
-Dr 1 0 0 O 1 2.5
+Sh "" O 2.4 3.6 0 0 0
+Dr 1.2 0 0 O 1.2 2.4
 At STD N 00E0FFFF
 Ne 0 ""
 Po -5.85 0
 $EndPAD
 $PAD
-Sh "" O 2 4 0 0 0
-Dr 1 0 0 O 1 2.5
+Sh "" O 2.4 3.6 0 0 0
+Dr 1.2 0 0 O 1.2 2.4
 At STD N 00E0FFFF
 Ne 0 ""
 Po 5.85 0
@@ -1019,6 +1019,20 @@ Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po -3.5 -2.6
+$EndPAD
+$PAD
+Sh "" C 1.1 1.1 0 0 0
+Dr 1.1 0 0
+At STD N 0000FFFF
+Ne 0 ""
+Po 2.25 0
+$EndPAD
+$PAD
+Sh "" C 1.1 1.1 0 0 0
+Dr 1.1 0 0
+At STD N 0000FFFF
+Ne 0 ""
+Po -2.25 0
 $EndPAD
 $EndMODULE USBplug
 $MODULE VLF3012A
