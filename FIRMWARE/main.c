@@ -1,10 +1,16 @@
 /*
-	Blinktronicator
-	Z. Fredin
-	12/27/2015
-	MIT license
+Blinktronicator
 
-	more info: https://hackaday.io/project/8331-blinktronicator
+MIT License (MIT)
+Copyright (c) 2015 Zach Fredin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+more info: https://hackaday.io/project/8331-blinktronicator
 */
 
 #include <avr/io.h>
@@ -25,6 +31,12 @@
 #define SW_LEFT 4	//ATtiny45 pin 3, PB4
 #define SW_RIGHT 2	//ATtiny45 pin 7, PB2	
 
+/* Global variables */
+uint8_t faderCount = 0; //used for iterating through displayFader() [for PWM generation]
+uint8_t valueLEDs[16] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}; //values from 0 to 255 for LEDs, L to R (starting with 630nm)
+unsigned char currentLEDstate1 = 0;
+unsigned char currentLEDstate2 = 0;
+
 void SystemInit(void) {
 /* Port B configuration */
 	DDRB |= ((1 << PIN_DATA) + (1 << PIN_CLOCK) + (1 << PIN_LATCH));//sets three I/O pins as outputs to send signals to 74HC595
@@ -37,101 +49,102 @@ void updateLEDs(unsigned char ledOutput1, unsigned char ledOutput2) {
 
 	int i;
 	PORTB &= ~(1<<PIN_LATCH); //starts by clearing latch pin	
-	
-	for (i = 0; i <= 7; i++) { //first eight bits... 
+
+
+	for (i = 7; i >= 0; i--) { //first eight bits...
 		if (ledOutput1 & (1<<i)) { //runs through the eight bits that make up ledOutput1
 			PORTB |= (1<<PIN_DATA); //sets data pin if it should be high
 		}
+
+
 		PORTB |= (1<<PIN_CLOCK); //sets clock pin (after data pin!)
-		PORTB &= ~(1<<PIN_DATA); //clears data pin regardless of its status
-		PORTB &= ~(1<<PIN_CLOCK); //clears clock pin
+		PORTB &= ~((1<<PIN_DATA) + (1<<PIN_CLOCK)); //clears data pin regardless of its status. also clears clock pin.
 	}
 
-	for (i = 0; i <= 7; i++) {	
+	for (i = 7; i >= 0; i--) {	
 		if (ledOutput2 & (1<<i)) {
 			PORTB |= (1<<PIN_DATA);
 		}
 		PORTB |= (1<<PIN_CLOCK);
-		PORTB &= ~(1<<PIN_DATA);
-		PORTB &= ~(1<<PIN_CLOCK);
+		PORTB &= ~((1<<PIN_DATA) + (1<<PIN_CLOCK));
 	}
 
 	PORTB |= (1<<PIN_LATCH); //sets latch pin to update display
 	PORTB &= ~(1<<PIN_LATCH);
 }
 
-/* this function would be cool:
+void displayFader() {
+// 8-bit PWM fader for LEDs
+// uses global variable values to determine whether or not to turn various LEDs on or off
 
-void displayValue(unsigned char value) {
-uint8_t lowerLED_index = value
-
-//	turn off all LEDs
-
-//	fading: pulling in an 8-bit number and displaying it on a 4-bit display (0-15)
-//	each LED pair needs 16 intermediary values (try eight?)
-
-//	determine LED pair
-
-uint8_t lowerLED_index = (value >> 4) //shift right four to divide value by four, rounding down (lower LED of pair)
+/* 	global varibales used
+		faderCount (uint8_t)	
+		valueLEDs[16] (uint8_t)
 */
+
+	int counter; // which LED are we on? 
+
+	currentLEDstate1 = 0;
+	currentLEDstate2 = 0;
+
+	for (counter = 0; counter <=7; counter++) { // cycle through both LED arrays
+
+		if (valueLEDs[counter] > faderCount) {
+			currentLEDstate1 |= (1<<counter);	
+		}
+
+		if (valueLEDs[counter + 8] > faderCount) {
+			currentLEDstate2 |= (1<<counter);
+		}
+
+	}
+	if (faderCount <= 100) {
+		faderCount += 1;
+	}
+	else {
+		faderCount = 0;
+	}
+}
 
 int main(void) {
 	SystemInit();
 
-	// demo code: 2-LED-wide chaser 
-	long counter = 0;
-	long counterMax = 23;	
-	unsigned char ledOutput1[24] = {0x80, 0xC0, 0x60, 0x30, 0x18, 0x0C, 0x06, 0x03,
-					0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-					0x00, 0x00 ,0x00 ,0x00, 0x00, 0x00, 0x00, 0x00
-					}; //LSB is D9 (580nm), MSB is D16 (630nm)
-	unsigned char ledOutput2[24] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-					0x80, 0xC0, 0x60, 0x30, 0x18, 0x0C, 0x06, 0x03,
-					0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-					}; //LSB is D1 (white), MSB is D8 (576nm)
-
 	int fastLoop = 0;
-	int fastLoopOverflow = 10;
+	int fastLoopOverflow = 1;
 
 	long slowLoop = 0;
-	long slowLoopOverflow = 5000; //5000: speedy but visible
+	long slowLoopOverflow = 500; //5000: speedy but visible
 
+
+	int buttonLeft = 0;
+	int buttonRight = 0;
+
+	int counter = 0;
 
 	for(;;) {
+
 		if (fastLoop == fastLoopOverflow) {
 
-/*	testing pushbutton interface
-		if (PINB & (1<<SW_LEFT)) {
-			ledOutput1 = 0x55;
-		}
-		else {
-			ledOutput1 = 0xAA;
-		}
-
-		if (PINB & (1<<SW_RIGHT)) {
-			ledOutput2 = 0x55;
-		}
-		else {
-			ledOutput2 = 0xAA;
-		}
-*/
-
 			if (slowLoop == slowLoopOverflow) {
-				updateLEDs(ledOutput1[counter], ledOutput2[counter]);
-
-				counter += 1;				
-				if(counter == counterMax) {
-					counter = 0;
-
+						
+				for (counter = 0; counter <= 15; counter++) { //cycle through LEDs
+					valueLEDs[counter] += 1;				
+					if (valueLEDs[counter] > 20) {
+						valueLEDs[counter] = 1;
+					}
 				}
+			
 				slowLoop = 0;
 			}
-			slowLoop += 1;
+		
 
+			displayFader();
+			updateLEDs(currentLEDstate1, currentLEDstate2);
+
+			slowLoop += 1;
 			fastLoop = 0;
 		}
 		fastLoop += 1;
 	
 	}
-
 }
